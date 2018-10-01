@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>BREAKING NEWS!</title>
+  <style>
+    body {
+      background-color: #ebebec
+    }
+
+    #wrapper {
+      width: 960px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 5%;
+    }
+
+    header {
+      text-align: center;
+    }
+
+    #articles {
+      display: inline-block;
+      overflow: auto;
+      width: 60%;
+      height: 700px;
+    }
+
+    #notes {
+      float: right;
+      width: 30%;
+    }
+
+    textarea,
+    input {
+      display: block;
+      width: 100%;
+      background-color: #ebebec;
+    }
+
+    input {
+      height: 36px;
+      font-size: 24px;
+    }
+
+    textarea {
+      height: 200px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="/breakingNews.gif" alt="">
+  </header>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="app.js"></script>
+  <div id="wrapper">
+    <button onclick="myFunction()">
+      <h1>Click Here for Breaking News</h1>
+    </button>
+    <p id="demo"></p>
+    <script>
+      function myFunction() {
+        window.location.replace("http://localhost:3000/scrape");
+      }
+    </script>
+    <h2><i>Feel free to comment on the right after clicking on an article.</article>.</i></h2>
+    <div id="articles"></div>
+    <div id="notes"></div>
+  </div>
+
+</body>
+
+</html>
